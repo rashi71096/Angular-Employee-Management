@@ -1,0 +1,110 @@
+<div style="width: 290px;">
+    <h2 style="padding-bottom:10px;font-family:cursive;color: darkviolet;" >EMPLOYEE FORM</h2>
+    <form [formGroup]="fitnessForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+    
+            <mat-form-field appearance="legacy">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" class="form-control" id="exampleInputfirstname" #input formControlName="first_name" placeholder="First Name">
+              
+                <mat-hint *ngIf="fitnessForm.controls.first_name.touched && fitnessForm.controls.first_name.errors?.required">Please enter first name.!</mat-hint>
+              </mat-form-field>
+    
+        </div>
+    
+        <div class="form-group">
+    
+            <mat-form-field appearance="legacy"  >
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" class="form-control" id="exampleInputlastname" formControlName="last_name" placeholder="Last Name">
+              
+                <mat-hint  *ngIf="fitnessForm.controls.last_name.touched && fitnessForm.controls.last_name.errors?.required"> Please enter last name.!</mat-hint>
+              </mat-form-field>
+    
+        </div>
+    
+        <div class="form-group">
+    
+            <mat-form-field appearance="legacy"  >
+                <mat-label>Salary</mat-label>
+                <input matInput type="number" class="form-control" id="exampleInputsalary" formControlName="salary" placeholder="salary">
+              
+                <mat-hint *ngIf="fitnessForm.controls.salary.touched && fitnessForm.controls.salary.errors?.required"> Please enter salary.!</mat-hint>
+              </mat-form-field>
+    
+        </div>
+    
+        <div class="form-group">
+    
+    
+            <mat-form-field appearance="legacy"  >
+                <mat-label>Email</mat-label>
+                <input matInput type="email" class="form-control" id="exampleInputemail" formControlName="email" placeholder="Eamil">
+              
+                <mat-hint  *ngIf="fitnessForm.controls.email.touched && fitnessForm.controls.email.errors?.required"> Please enter email.!</mat-hint>
+                <mat-hint
+                *ngIf="fitnessForm.controls.email.touched && fitnessForm.controls.email.errors?.email">
+                Enter the valid email .!
+            </mat-hint>
+              </mat-form-field>
+        </div>
+     
+        <div class="form-group">
+    
+            <!-- <mat-form-field appearance="legacy">
+                <mat-label>Role</mat-label>
+                <input matInput type="text" class="form-control" id="examplerole" formControlName="role" placeholder="role">
+              
+                <mat-hint  *ngIf="fitnessForm.controls.role.touched && fitnessForm.controls.role.errors?.required"> Please enter employee role.!</mat-hint>
+              </mat-form-field> -->
+    
+
+              <mat-form-field appearance="legacy">
+                <mat-label>Role</mat-label>
+                <mat-select #input formControlName="role" placeholder="role">
+                    <mat-option value="user">User</mat-option>
+                    <mat-option value="admin">Admin</mat-option>
+                
+                </mat-select>
+                <mat-hint  *ngIf="fitnessForm.controls.role.touched && fitnessForm.controls.role.errors?.required"> Please enter employee role.!</mat-hint>
+            </mat-form-field>
+
+
+        </div>
+    
+        <div class="form-group">
+    
+    
+            <mat-form-field appearance="legacy">
+                <mat-label>Designation</mat-label>
+                <input matInput type="text" class="form-control" id="exampleInputdesignation" formControlName="designation" placeholder="designation">
+              
+                <mat-hint   *ngIf="fitnessForm.controls.designation.touched && fitnessForm.controls.designation.errors?.required"> Please enter designation.!</mat-hint>
+              </mat-form-field>
+          
+        </div>
+        <div class="form-group">
+    
+    
+            <mat-form-field appearance="legacy">
+                <mat-label>Grade</mat-label>
+                <input matInput type="text" class="form-control" id="exampleInputgrade" formControlName="grade" placeholder="grade">
+              
+                <mat-hint *ngIf="fitnessForm.controls.grade.touched && fitnessForm.controls.grade.errors?.required">  Please enter grade.!</mat-hint>
+              </mat-form-field>
+          
+        </div>
+
+        <!-- <mat-form-field appearance="legacy">
+            <mat-label>Date of Joining</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field> -->
+
+
+      
+        <button style="width: 100%;" mat-raised-button color="primary" type="submit" [mat-dialog-close]="true" type="submit" [disabled]="!fitnessForm.valid" [mat-dialog-close]="true">Submit</button>
+        <!-- <button type="submit" [mat-dialog-close]="true" class="btn btn-primary" [disabled]="!fitnessForm.valid">Submit</button> -->
+    
+    </form>

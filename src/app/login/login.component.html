@@ -1,0 +1,82 @@
+
+
+<div class="row">
+  <div class="column">
+    <div class="main-div">
+<img src="https://www.synergita.com/blog/wp-content/uploads/2019/06/differentiate-employee-perforamnce-mangement-vs-performance-appraisal-626x400.jpg" />
+      </div>
+
+  </div>
+  <div class="column" style="background-color:blueviolet;">
+   
+    
+<div class="main-div">
+  <!-- <h2 style="margin-top: 20px;">Login</h2>
+<br/> -->
+  <mat-card class="form-group">
+    <mat-card-header>
+      <h2 style="text-align: center;color:darkmagenta;font-family: cursive;padding: 5px;font-weight: bolder;">LOGIN</h2>
+      <div class="login-box-header">
+        <!-- Src image is temporary hosted in image.ibb-->
+        <!-- <img src="https://image.ibb.co/hDqa3p/codershood.png"> -->
+       
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input type="email" formControlName="email" matInput placeholder="Email">
+                <mat-hint class="error"  *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.required"> Please enter email.!</mat-hint>
+                <mat-hint class="error"
+                *ngIf="loginForm.controls.email.touched && loginForm.controls.email.errors?.email">
+                Enter the valid email .!
+            </mat-hint>
+                <!-- <mat-hint>Please enter registered email id</mat-hint> -->
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <!-- <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+                    </mat-form-field> -->
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input type="password" formControlName="password" matInput placeholder="Password">
+                <mat-hint class="error"  *ngIf="loginForm.controls.password.touched && loginForm.controls.password.errors?.required"> Please enter password.!</mat-hint>
+                <!-- <mat-hint>Please enter your password here</mat-hint> -->
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <mat-hint class="error"
+                *ngIf="invalidLogin">
+                Incorrect credentials
+            </mat-hint>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button [disabled]="!loginForm.valid" type="submit" mat-raised-button color="primary" style="width: 100%">LOGIN</button>
+            </td>
+          </tr>
+        </table>
+
+      </form>
+      <!-- <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner> -->
+    </mat-card-content>
+    <!-- <mat-card-actions>
+            <button mat-raised-button (click)="login()" color="primary">Login</button>
+          </mat-card-actions> -->
+  </mat-card>
+
+</div>
+  </div>
+</div>
+
+

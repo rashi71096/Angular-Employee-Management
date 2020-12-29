@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    padding: 2%;
+  }
+
+  tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th {
+    color: purple;
+    font-size: 16px;
+  }
+
+  .mat-tab-label {
+    width: 50%;
+}
+.md-fab-bottom-right{
+    position: fixed !important;
+    right: 15px; /* Add this and change value to set the margin you want */
+}

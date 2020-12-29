@@ -1,0 +1,84 @@
+<div class="main-div" style="margin-top: 50px;">
+    <!-- <h2 style="margin-top: 20px;">Login</h2>
+  <br/> -->
+
+  <mat-card class="form-group"  style="width: 205px;height: 225px;">
+   
+    <mat-card-content>
+      <img src="https://www.pngarts.com/files/3/Avatar-PNG-Download-Image.png" height="200px" width="200px"/>
+    
+    </mat-card-content>
+
+  </mat-card>
+
+
+
+
+
+    <mat-card class="form-group" style="width: 500px;height: 225px;">
+      <mat-card-header>
+        <h2 style="text-align: center;color:darkmagenta;font-family: cursive;padding: 5px;font-weight: bolder;font-size: 21px">
+        Hi, {{user.first_name}} {{user.last_name}}
+        </h2>
+        <div class="login-box-header">
+          <!-- Src image is temporary hosted in image.ibb-->
+          <!-- <img src="https://image.ibb.co/hDqa3p/codershood.png"> -->
+         
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td style="font-weight: bold;">
+                Name : 
+              </td>
+              <td>
+                  {{user.first_name}}  {{user.last_name}}
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">
+               Email ID : 
+              </td>
+              <td>
+                {{user.email}}
+            </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">
+                Designation : 
+              </td>
+              <td>
+                {{user.designation}}
+            </td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">
+             Grade : 
+              </td>
+              <td>
+                {{user.grade}}
+            </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">
+                  Salary : 
+                </td>
+                <td>
+                  {{user.salary}} Rs per annum
+              </td>
+              </tr>
+          </table>
+  
+        </form>
+      
+      </mat-card-content>
+      <mat-card-footer>
+        <button style="margin-right:5%;width: 100%;margin-left: -100px;margin-top: 11px;" mat-raised-button color="accent"
+        (click)="openDialog(user)">Edit</button>
+      </mat-card-footer>
+    </mat-card>
+   
+  </div>
+  

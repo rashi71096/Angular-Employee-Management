@@ -1,0 +1,41 @@
+<div style="padding:10px;font-family:cursive;color:indigo;text-align: center;top: 20px;">
+    <table style="border: red 2px dotted; width: 100%">
+        <th>
+            <h1 style="font-family:cursive;font-size: 30px;margin-top: 16px;">XORNET <h5 style="color: red;">The
+                    Employee Management System</h5>
+            </h1>
+
+        </th>
+    </table>
+</div>
+
+<button style="float:right;margin-right: 20px;" mat-raised-button color="warn" (click)="handleLogout()">LOGOUT</button>
+<mat-tab-group style="width: 100%;">
+    <mat-tab label="Home">
+        <!DOCTYPE html>
+        <html>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <body>
+            <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+                <img class="w3-image"
+                    src="https://images.unsplash.com/photo-1576267423429-569309b31e84?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="Employees" width="1500" height="50">
+                <div class="w3-display-middle w3-margin-top w3-center">
+                    <h1 class="w3-xxlarge w3-text-white"><span
+                            class="w3-padding w3-black w3-opacity-min"><b>Hi,  {{userDetail.first_name+"   "+userDetail.last_name }}</b></span> <span
+                            class="w3-hide-small w3-text-light-grey"></span></h1>
+                </div>
+            </header>
+        </body>
+        </html>
+    </mat-tab>
+    <mat-tab label="Xorianters">
+        <app-employeelist [user]="userDetail"></app-employeelist>
+    </mat-tab>
+    <mat-tab label="My Profile">
+<app-profilepage [user]="userDetail"></app-profilepage>
+    </mat-tab>
+
+</mat-tab-group>

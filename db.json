@@ -1,0 +1,124 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "first_name": "Sebastia",
+      "last_name": "Eschweilere",
+      "email": "sebastian@gmail.com",
+      "password": "ABC@123",
+      "role": "admin",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G2",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": "2",
+      "first_name": "Steve",
+      "last_name": "Palmer",
+      "email": "steve@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G4",
+      "designation": "Senior Software Engineer"
+    },
+    {
+      "id": "3",
+      "first_name": "Ann",
+      "last_name": "Smith",
+      "email": "ann@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G1",
+      "designation": "Associate Software Engineer"
+    },
+    {
+      "id": "4",
+      "first_name": "Vivek",
+      "last_name": "Kulkarni",
+      "email": "vivek@gmail.com",
+      "password": "ABC@123",
+      "role": "admin",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G2",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": "5",
+      "first_name": "Aman",
+      "last_name": "Agrawal",
+      "email": "aman@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G3",
+      "designation": "Senior Software Engineer"
+    },
+    {
+      "id": "6",
+      "first_name": "Nisha",
+      "last_name": "Nigam",
+      "email": "nisha@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G1",
+      "designation": "Associate Software Engineer"
+    },
+    {
+      "id": "9",
+      "first_name": "Deepika",
+      "last_name": "Singh",
+      "email": "deepika@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G1",
+      "designation": "Associate Software Engineer"
+    },
+    {
+      "id": "11",
+      "first_name": "Bhavna",
+      "last_name": "Garg",
+      "email": "bhavna@gmail.com",
+      "password": "ABC@123",
+      "role": "user",
+      "salary": 32000,
+      "DOJ": "27-Oct-2012",
+      "grade": "G3",
+      "designation": "Senior Software Engineer"
+    },
+    {
+      "first_name": "Prasad",
+      "last_name": "kedare",
+      "role": "user",
+      "email": "rashigupta71096@gmail.com",
+      "password": "",
+      "salary": 9898921,
+      "DOJ": "",
+      "designation": "Analyst",
+      "grade": "G2",
+      "id": "pL6-tV3"
+    },
+    {
+      "first_name": "Dimple",
+      "last_name": "Agrawal",
+      "role": "user",
+      "email": "dimpleagr@gmail.com",
+      "password": "DimpleAgrawal",
+      "salary": 500000,
+      "DOJ": "",
+      "designation": "Associate Engineer",
+      "grade": "G1",
+      "id": "dQOqm4Z"
+    }
+  ]
+}

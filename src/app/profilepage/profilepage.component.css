@@ -1,0 +1,12 @@
+.main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  td {
+    font-family: cursive;
+    padding:7px;
+    font-size: 18px;
+  }
