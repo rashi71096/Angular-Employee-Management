@@ -1,10 +1,17 @@
 # EmployeeMgmt
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
+The application allows the user to perform basic CRUD operation that are carried out in an Employee management software. 
+The application has to authorization access i.e 'User' and 'Admin'. 
+Admin can add a new employee and the new employee can then login to the system using email ID and the initial password be in the pattern firstnamelastname.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## JSON Server
+
+Run `npm run db:server` to start JSON server for data.
 
 ## Code scaffolding
 
